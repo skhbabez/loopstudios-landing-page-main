@@ -1,8 +1,18 @@
 ---
-import astroLogo from "../assets/astro.svg";
-import background from "../assets/background.svg";
+import Button from "./Button.astro";
+import Card from "./Card.astro";
 ---
 
+<main>
+  <Button>test</Button>
+  <Card
+    mobileImgUrl="/images/mobile/image-curiosity.jpg"
+    desktopImgUrl="/images/desktop/image-curiosity.jpg"
+    alt="The Curiosity Rover on Mars"
+    title="the curiosity"
+  />
+</main>
+<!-- 
 <div id="container">
   <img id="background" src={background.src} alt="" fetchpriority="high" />
   <main>
@@ -215,4 +225,4 @@ import background from "../assets/background.svg";
       line-height: 1.5;
     }
   }
-</style>
+</style> -->

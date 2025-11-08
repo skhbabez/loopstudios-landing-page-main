@@ -1,4 +1,5 @@
 ---
+import { Font } from "astro:assets";
 import "../styles/global.css";
 ---
 
@@ -7,11 +8,12 @@ import "../styles/global.css";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon-32x32.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro Basics</title>
+    <Font cssVariable="--font-josefin" preload />
   </head>
-  <body class="font-josefin">
+  <body class="font-josefin text-6">
     <slot />
   </body>
 </html>

@@ -1,1 +1,56 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  src: local("Josefin Sans") url("/fonts/JosefinSans-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@theme {
+  --color-*: initial;
+  --color-grey-200: #d8d8d8;
+  --color-blue-100: #e5eaf1;
+  --color-blue-50: #f6faff;
+  --white: #ffffff;
+  --black: #000000;
+
+  --text-*: initial;
+  --text-1: 4.5rem;
+  --text-1--line-height: 1;
+  --text-1--letter-spacing: normal;
+  --text-1--font-weight: 300;
+
+  --text-2: 3rem;
+  --text-2--line-height: 1;
+  --text-2--letter-spacing: normal;
+  --text-2--font-weight: 300;
+
+  --text-3: 2.5rem;
+  --text-3--line-height: 1;
+  --text-3--letter-spacing: normal;
+  --text-3--font-weight: 300;
+
+  --text-4: 2rem;
+  --text-4--line-height: 1;
+  --text-4--letter-spacing: normal;
+  --text-4--font-weight: 300;
+
+  --text-5: 1.5rem;
+  --text-5--line-height: 1;
+  --text-5--letter-spacing: normal;
+  --text-5--font-weight: 300;
+
+  --text-6: 0.9375rem;
+  --text-6--line-height: 1.65;
+  --text-6--letter-spacing: normal;
+  --text-6--font-weight: 400;
+
+  --text-7: 0.875rem;
+  --text-7--line-height: 1;
+  --text-7--letter-spacing: normal;
+  --text-7--font-weight: 400;
+
+  --font-*: initial;
+  --font-josefin: "Josefin Sans" sans-serif;
+}

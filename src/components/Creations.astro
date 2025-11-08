@@ -1,0 +1,87 @@
+---
+import Card from "./Card.astro";
+
+// we might want to use markdown components for this for fun
+
+// interface Creation {
+//   mobileImgUrl: string | ImageMetadata;
+//   desktopImgUrl: string | ImageMetadata;
+//   alt: string;
+//   title: string;
+// }
+// interface Props {
+//   creations: Creation[];
+// }
+
+const creations = [
+  {
+    mobileImgUrl: "/images/mobile/image-curiosity.jpg",
+    desktopImgUrl: "/images/desktop/image-curiosity.jpg",
+    alt: "the curiosity rover on mars",
+    title: "the curiosity",
+    href: "#",
+  },
+  {
+    mobileImgUrl: "/images/mobile/image-deep-earth.jpg",
+    desktopImgUrl: "/images/desktop/image-deep-earth.jpg",
+    alt: "a view of the earth from space",
+    title: "deep earth",
+    href: "#",
+  },
+  {
+    mobileImgUrl: "/images/mobile/image-fisheye.jpg",
+    desktopImgUrl: "/images/desktop/image-fisheye.jpg",
+    alt: "a fisheye lens view of a cityscape",
+    title: "make it fisheye",
+    href: "#",
+  },
+  {
+    mobileImgUrl: "/images/mobile/image-from-above.jpg",
+    desktopImgUrl: "/images/desktop/image-from-above.jpg",
+    alt: "an aerial view of a highway from above",
+    title: "from up above vr",
+    href: "#",
+  },
+  {
+    mobileImgUrl: "/images/mobile/image-grid.jpg",
+    desktopImgUrl: "/images/desktop/image-grid.jpg",
+    alt: "an electric car",
+    title: "the grid",
+    href: "#",
+  },
+  {
+    mobileImgUrl: "/images/mobile/image-night-arcade.jpg",
+    desktopImgUrl: "/images/desktop/image-night-arcade.jpg",
+    alt: "a glowing arcade at night",
+    title: "night arcade",
+    href: "#",
+  },
+  {
+    mobileImgUrl: "/images/mobile/image-pocket-borealis.jpg",
+    desktopImgUrl: "/images/desktop/image-pocket-borealis.jpg",
+    alt: "the northern lights in the sky",
+    title: "pocket borealis",
+    href: "#",
+  },
+  {
+    mobileImgUrl: "/images/mobile/image-soccer-team.jpg",
+    desktopImgUrl: "/images/desktop/image-soccer-team.jpg",
+    alt: "a soccer team celebrating a win",
+    title: "soccer team vr",
+    href: "#",
+  },
+];
+---
+
+<section>
+  <h2 class="uppercase text-4 xl:text-2">our creations</h2>
+  <list class="grid gap-6 xl:gap-8">
+    {
+      creations.map((creation) => (
+        <li>
+          <Card {...creation} />
+        </li>
+      ))
+    }
+  </list>
+</section>

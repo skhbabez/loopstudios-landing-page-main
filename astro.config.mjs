@@ -13,6 +13,8 @@ export default defineConfig({
       {
         provider: fontProviders.google(),
         name: "Josefin Sans",
+        weights: [300, 400],
+        styles: ["normal"],
         cssVariable: "--font-josefin",
       },
     ],

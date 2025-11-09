@@ -1,0 +1,55 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo.svg";
+import facebook from "../assets/icon-facebook.svg";
+import twitter from "../assets/icon-twitter.svg";
+import pinterest from "../assets/icon-pinterest.svg";
+import instagram from "../assets/icon-instagram.svg";
+
+const links = {
+  about: "/about",
+  careers: "/careers",
+  events: "/events",
+  products: "/products",
+  support: "/support",
+};
+const social = {
+  facebook: facebook,
+  twitter: twitter,
+  pinterest: pinterest,
+  instagram: instagram,
+};
+---
+
+<footer class="bg-black p-14 flex flex-col items-center">
+  <div>
+    <Image src={logo} alt="loopstudios" />
+    <ul class="flex flex-col gap-4 items-center">
+      {
+        Object.entries(links).map(([k, v]) => (
+          <li>
+            <a class="capitalize text-white text-6" href={v}>
+              {k}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div class="md:flex">
+    <ul class="flex gap-4 items-center">
+      {
+        Object.entries(social).map(([k, v]) => (
+          <li>
+            <a href={`https://www.${k}.com`}>
+              <Image src={v} alt={k} />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <small class="text-6 text-white/50"
+      >© 2021 Loopstudios. All rights reserved.</small
+    >
+  </div>
+</footer>

@@ -14,6 +14,8 @@ import "../styles/global.css";
     <Font cssVariable="--font-josefin" preload />
   </head>
   <body class="font-josefin text-6">
+    <slot name="header" />
     <slot />
+    <slot name="footer" />
   </body>
 </html>

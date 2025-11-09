@@ -7,8 +7,8 @@ interface Frontmatter {
   title: string;
   href: string;
   alt: string;
-  mobileImgUrl: string | ImageMetadata;
-  desktopImgUrl: string | ImageMetadata;
+  mobileImgUrl: string;
+  desktopImgUrl: string;
 }
 
 const matches = import.meta.glob<MarkdownInstance<Frontmatter>>(
@@ -28,7 +28,7 @@ const creations = Object.values(matches);
   >
     our creations
   </h2>
-  <list
+  <ul
     class="grid gap-6 xl:gap-8 xl:grid-cols-4 list-none xl:row-start-2 xl:col-span-2 max-md:mt-4"
   >
     {
@@ -38,7 +38,7 @@ const creations = Object.values(matches);
         </li>
       ))
     }
-  </list>
+  </ul>
   <Button
     class="justify-self-center xl:justify-self-end xl:row-start-1 xl:col-start-2"
     >see all</Button

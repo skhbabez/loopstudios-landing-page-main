@@ -8,7 +8,9 @@ interface Props {
   title: string;
   href: string;
 }
-const { mobileImgUrl, desktopImgUrl, alt, title } = Astro.props;
+
+const { mobileImgUrl, desktopImgUrl, alt, title, href } = Astro.props;
+
 const mobileImg = await getImage({
   src: mobileImgUrl,
   format: "webp",
@@ -25,7 +27,7 @@ const desktopImg = await getImage({
 ---
 
 <a
-  href="#"
+  href={href}
   class="block relative h-30 min-w-[327px] xl:min-w-auto xl:w-64 xl:h-112.5"
 >
   <span

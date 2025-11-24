@@ -21,35 +21,43 @@ const social = {
 };
 ---
 
-<footer class="bg-black p-14 flex flex-col items-center">
-  <div>
-    <Image src={logo} alt="loopstudios" />
-    <ul class="flex flex-col gap-4 items-center">
-      {
-        Object.entries(links).map(([k, v]) => (
-          <li>
-            <a class="capitalize text-white text-6" href={v}>
-              {k}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </div>
-  <div class="md:flex">
-    <ul class="flex gap-4 items-center">
-      {
-        Object.entries(social).map(([k, v]) => (
-          <li>
-            <a href={`https://www.${k}.com`}>
-              <Image src={v} alt={k} />
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-    <small class="text-6 text-white/50"
-      >© 2021 Loopstudios. All rights reserved.</small
+<footer class="bg-black p-14 md:px-20 md:py-11">
+  <div
+    class="max-w-[1110px] mx-auto flex flex-col md:flex-row md:justify-between items-center"
+  >
+    <div class="flex flex-col max-md:gap-10 md:justify-between md:h-[73px]">
+      <Image src={logo} alt="loopstudios" />
+      <ul
+        class="flex flex-col md:flex-row md:justify-between gap-4 items-center"
+      >
+        {
+          Object.entries(links).map(([k, v]) => (
+            <li>
+              <a class="capitalize text-white text-6" href={v}>
+                {k}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div
+      class="max-md:mt-10 md:flex md:flex-col md:justify-between md:h-[73px] md:items-end"
     >
+      <ul class="flex gap-4 items-center justify-center">
+        {
+          Object.entries(social).map(([k, v]) => (
+            <li>
+              <a href={`https://www.${k}.com`}>
+                <Image src={v} alt={k} />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <small class="inline-block text-6 text-white/50 max-md:mt-4"
+        >© 2021 Loopstudios. All rights reserved.</small
+      >
+    </div>
   </div>
 </footer>

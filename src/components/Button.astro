@@ -5,7 +5,7 @@ type Props = HTMLAttributes<"button">;
 
 const { class: list, ...attrs } = Astro.props;
 const styles =
-  "text-7 uppercase py-3 px-10 bg-white text-black active:bg-black active:text-white hover:bg-grey-200 focus-visible:bg-grey-200 focus-visible:outline-2 border border-black transition-colors duration-300 ease-in-out";
+  "font-alata text-7 uppercase py-3 px-10 bg-white text-black active:bg-black active:text-white hover:bg-grey-200 focus-visible:bg-grey-200 focus-visible:outline-2 border border-black transition-colors duration-300 ease-in-out";
 ---
 
 <button class:list={[styles, list]} {...attrs}>

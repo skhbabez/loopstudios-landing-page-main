@@ -17,6 +17,13 @@ export default defineConfig({
         styles: ["normal"],
         cssVariable: "--font-josefin",
       },
+      {
+        provider: fontProviders.google(),
+        name: "Alata",
+        weights: [400],
+        styles: ["normal"],
+        cssVariable: "--font-alata",
+      },
     ],
   },
 });

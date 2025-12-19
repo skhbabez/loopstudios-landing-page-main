@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo.svg";
+import menu from "../assets/icon-hamburger.svg";
+---
+
+<header
+  class="bg-[url(/images/mobile/image-hero.jpg)] md:bg-[url(/images/desktop/image-hero.jpg)] bg-center bg-cover px-6 py-10 h-162.5 md:px-20 md:py-16 xl:px-41.25"
+>
+  <div class="h-95.75 md:h-110 flex flex-col justify-between">
+    <div class="flex justify-between items-center">
+      <a href="#">
+        <Image class="h-5.5 w-36 md:w-48 md:h-8" src={logo} alt="Home" />
+      </a>
+      <Image
+        class="h-4 w-6 md:w-8 md:h-[1.333125rem]"
+        src={menu}
+        alt="Navigation Menu"
+      />
+    </div>
+    <div
+      class="py-4.5 px-6 max-w-81.75 md:max-w-162.5 border-white border-2 self-start"
+    >
+      <h1 class="text-white text-3 uppercase md:text-1">
+        Immersive experiences that deliver
+      </h1>
+    </div>
+  </div>
+</header>

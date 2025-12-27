@@ -1,0 +1,29 @@
+---
+const desktopImgUrl = "public/images/desktop/image-interactive.jpg";
+const mobileImgUrl = "public/images/mobile/image-interactive.jpg";
+const alt = "A Form fitting VR Headset used by one of our Customers";
+---
+
+<section class="xl:max-w-277.75 xl:w-full relative">
+  <picture>
+    <source media="(min-width: 1280px)" srcset={desktopImgUrl} />
+    <img
+      class="max-xl:mx-auto max-xl:object-cover max-xl:w-full max-h-125"
+      src={mobileImgUrl}
+      alt={alt}
+    />
+  </picture>
+  <div
+    class="bg-white text-center xl:text-left max-md:mx-6 max-xl:mt-12 xl:absolute xl:bottom-0 xl:right-0 xl:ps-24 xl:pt-24 xl:w-min"
+  >
+    <h2 class="text-4 md:text-2 uppercase">
+      The leader in <br /> interactive VR
+    </h2>
+    <p class="text-6 font-alata opacity-50 mt-4 md:mt-6 xl:min-w-111.25">
+      Founded in 2011, Loopstudios has been producing world-class virtual
+      reality projects for some of the best companies around the globe. Our
+      award-winning creations have transformed businesses through digital
+      experiences that bind to their brand.
+    </p>
+  </div>
+</section>

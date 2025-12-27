@@ -22,7 +22,7 @@ const { mobileImgUrl, desktopImgUrl, alt, title, href } = Astro.props;
   <picture>
     <source media="(min-width: 1280px)" srcset={desktopImgUrl} />
     <img
-      class="object-cover object-bottom w-full h-full"
+      class="object-cover object-bottom md:object-top w-full h-full"
       src={mobileImgUrl}
       alt={alt}
     />

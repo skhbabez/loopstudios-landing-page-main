@@ -12,17 +12,17 @@ const { mobileImgUrl, desktopImgUrl, alt, title, href } = Astro.props;
 
 <a
   href={href}
-  class="block relative h-30 min-w-[327px] xl:min-w-auto xl:w-64 xl:h-112.5"
+  class="block relative h-30 min-w-[327px] xl:min-w-auto xl:w-64 xl:h-112.5 group"
 >
   <span
-    class:list={"absolute max-w-32 xl:max-w-44 left-5 md:left-10 bottom-5 xl:bottom-8 uppercase text-5 text-white xl:text-4"}
+    class:list={"z-10 hover absolute max-w-32 xl:max-w-44 left-5 md:left-10 bottom-5 xl:bottom-8 uppercase text-5 text-white xl:text-4 group-hover:text-black transition delay-75 duration-300 ease-in-out"}
   >
     {title}
   </span>
   <picture>
     <source media="(min-width: 1280px)" srcset={desktopImgUrl} />
     <img
-      class="object-cover object-bottom md:object-top w-full h-full"
+      class="object-cover object-bottom md:object-top w-full h-full group-hover:opacity-25 transition delay-75 duration-300 ease-in-out"
       src={mobileImgUrl}
       alt={alt}
     />

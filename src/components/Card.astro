@@ -9,8 +9,8 @@ interface Props {
 
 const { mobileImgUrl, desktopImgUrl, alt, title, href } = Astro.props;
 const base = import.meta.env.BASE_URL;
-const mobileSrc = `${base}/${mobileImgUrl}`;
-const desktopSrc = `${base}/${desktopImgUrl}`;
+const mobileSrc = base + mobileImgUrl;
+const desktopSrc = base + desktopImgUrl;
 ---
 
 <a

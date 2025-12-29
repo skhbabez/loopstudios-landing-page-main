@@ -1,10 +1,10 @@
 ---
-const desktopImgUrl = "images/desktop/image-interactive.jpg";
-const mobileImgUrl = "images/mobile/image-interactive.jpg";
+const desktopImgUrl = "/images/desktop/image-interactive.jpg";
+const mobileImgUrl = "/images/mobile/image-interactive.jpg";
 const alt = "A Form fitting VR Headset used by one of our Customers";
 const base = import.meta.env.BASE_URL;
-const mobileSrc = `${base}/${mobileImgUrl}`;
-const desktopSrc = `${base}/${desktopImgUrl}`;
+const mobileSrc = base + mobileImgUrl;
+const desktopSrc = base + desktopImgUrl;
 ---
 
 <section class="xl:max-w-277.75 xl:w-full relative">

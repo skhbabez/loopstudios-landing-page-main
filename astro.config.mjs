@@ -5,6 +5,8 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://skhbabez.github.io",
+  base: "/loopstudios-landing-page-main",
   vite: {
     plugins: [tailwindcss()],
   },

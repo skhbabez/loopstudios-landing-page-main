@@ -1,0 +1,15 @@
+---
+interface Props {
+  href: string;
+}
+
+const { href } = Astro.props;
+---
+
+<div class="relative">
+  <a class="peer outline-none" href={href}><slot /></a>
+  <div
+    class="absolute border-t-2 w-[45.28%] left-3/6 translate-x-[-50%] mt-2 peer-focus:visible peer-focus-visible:visible peer-hover:visible invisible"
+  >
+  </div>
+</div>

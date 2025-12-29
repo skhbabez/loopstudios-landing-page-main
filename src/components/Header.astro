@@ -4,10 +4,17 @@ import logo from "../assets/logo.svg";
 import menu from "../assets/icon-hamburger.svg";
 import close from "../assets/icon-close.svg";
 import HoverLink from "./HoverLink.astro";
+const base = import.meta.env.BASE_URL;
+const hero_mobile = base + "/images/mobile/image-hero.jpg";
+const hero_desktop = base + "/images/desktop/image-hero.jpg";
+const bgImages = `bg-[url(${hero_mobile})] md:bg-[url(${hero_desktop})]`;
 ---
 
 <header
-  class="bg-[url(/images/mobile/image-hero.jpg)] md:bg-[url(/images/desktop/image-hero.jpg)] bg-center bg-cover px-6 py-10 h-162.5 md:px-20 md:py-16 xl:px-41.25"
+  class:list={[
+    bgImages,
+    "bg-center bg-cover px-6 py-10 h-162.5 md:px-20 md:py-16 xl:px-41.25",
+  ]}
 >
   <div class="h-95.75 md:h-110 flex flex-col justify-between">
     <nav class="flex justify-between items-center">

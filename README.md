@@ -1,46 +1,43 @@
-# Astro Starter Kit: Basics
+# Frontend Mentor - Loopstudios landing page solution
 
-```sh
-npm create astro@latest -- --template basics
-```
+This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Table of contents
 
-## 🚀 Project Structure
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
 
-Inside of your Astro project, you'll see the following folders and files:
+## Overview
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+### The challenge
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Users should be able to:
 
-## 🧞 Commands
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-All commands are run from the root of the project, from a terminal:
+### Links
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- Solution URL: [https://github.com/skhbabez/loopstudios-landing-page-main](https://github.com/skhbabez/loopstudios-landing-page-main)
+- Live Site URL: [https://skhbabez.github.io/loopstudios-landing-page-main/](hhttps://skhbabez.github.io/loopstudios-landing-page-main/)
 
-## 👀 Want to learn more?
+## My process
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Built with
+
+- Mobile-first workflow
+- [Astro](https://astro.build/) - Web framework
+- [Tailwind CSS](https://tailwindcss.com/) - For styles
+
+### What I learned
+
+I decided to try out astro for this challenge. This framework was surprisingly easy to pick up and I am probably going to use this for future projects again sometimes.
+
+### Continued development
+
+I almost forgot about this project due to some others courses I took. I will probably give it another pass after some time, especially considering accessibility.

@@ -4,16 +4,27 @@ import logo from "../assets/logo.svg";
 import menu from "../assets/icon-hamburger.svg";
 import close from "../assets/icon-close.svg";
 import HoverLink from "./HoverLink.astro";
-const base = import.meta.env.BASE_URL;
-const heroDesktop = `url(${base}/images/desktop/image-hero.jpg)`;
-const heroMobile = `url(${base}/images/mobile/image-hero.jpg)`;
+import { getImage } from "astro:assets";
+import mobileBg from "../assets/mobile/image-hero.jpg";
+import desktopBg from "../assets/desktop/image-hero.jpg";
+
+const heroMobile = await getImage({
+  src: mobileBg,
+  format: "webp",
+});
+const heroDesktop = await getImage({
+  src: desktopBg,
+  format: "webp",
+});
+const heroMobileUrl = `url(${heroMobile.src})`;
+const heroDesktopUrl = `url(${heroDesktop.src})`;
 ---
 
-<style define:vars={{ heroDesktop, heroMobile }}>
+<style define:vars={{ heroMobileUrl, heroDesktopUrl }}>
   .hero-bg {
-    background-image: var(--heroMobile);
+    background-image: var(--heroMobileUrl);
     @media (min-width: 768px) {
-      background-image: var(--heroDesktop);
+      background-image: var(--heroDesktopUrl);
     }
   }
 </style>

@@ -45,6 +45,6 @@
   --text-7--font-weight: 400;
 
   --font-*: initial;
-  --font-josefin: var(--font-josefin) sans-serif;
-  --font-alata: var(--font-alata) sans-serif;
+  --font-josefin: "Josefin Sans" sans-serif;
+  --font-alata: "Alata" sans-serif;
 }

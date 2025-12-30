@@ -24,6 +24,8 @@ const heroDesktopUrl = `url(${heroDesktop.src})`;
   .hero-bg {
     background-image: var(--heroMobileUrl);
     @media (min-width: 768px) {
+      background-color: rgba(0, 0, 0, 0.4);
+      background-blend-mode: darken;
       background-image: var(--heroDesktopUrl);
     }
   }
@@ -43,7 +45,7 @@ const heroDesktopUrl = `url(${heroDesktop.src})`;
           alt="Navigation Menu"
         />
       </button>
-      <menu
+      <ul
         class="text-6 font-alata gap-8 text-white capitalize hidden xl:flex xl:self-start"
       >
         <li>
@@ -61,10 +63,10 @@ const heroDesktopUrl = `url(${heroDesktop.src})`;
         <li>
           <HoverLink href="#">support</HoverLink>
         </li>
-      </menu>
+      </ul>
     </nav>
     <div
-      class="py-4.5 px-6 max-w-81.75 md:max-w-162.5 border-white border-2 self-start"
+      class="py-4.5 px-6 max-w-81.75 md:p-10 xl:py-10.5 md:max-w-162.5 border-white border-2 self-start"
     >
       <h1 class="text-white text-3 uppercase md:text-1">
         Immersive experiences that deliver
@@ -80,12 +82,11 @@ const heroDesktopUrl = `url(${heroDesktop.src})`;
         <a href="#">
           <Image class="h-5.5 w-36 md:w-48 md:h-8" src={logo} alt="Home" />
         </a>
-        <button id="close-nav-button"
+        <button id="close-nav-button" autofocus
           ><Image
             class="w-[1.14875rem] h-[1.14875rem] md:w-[1.531875rem] md:h-[1.531875rem]"
             src={close}
             alt="close nav menu"
-            autofocus
           />
         </button>
       </div>
@@ -102,16 +103,16 @@ const heroDesktopUrl = `url(${heroDesktop.src})`;
   </dialog>
   <script>
     const menu = document.getElementById("nav-menu") as HTMLDialogElement;
-    const button_close = document.getElementById(
+    const buttonClose = document.getElementById(
       "close-nav-button"
     ) as HTMLButtonElement;
-    const button_open = document.getElementById(
+    const buttonOpen = document.getElementById(
       "open-nav-button"
     ) as HTMLButtonElement;
-    button_open.addEventListener("click", () => {
+    buttonOpen.addEventListener("click", () => {
       menu.showModal();
     });
-    button_close.addEventListener("click", () => {
+    buttonClose.addEventListener("click", () => {
       menu.close();
     });
   </script>

@@ -15,12 +15,16 @@ const desktopSrc = base + desktopImgUrl;
 
 <a
   href={href}
-  class="block relative h-30 min-w-[327px] xl:min-w-auto xl:w-64 xl:h-112.5 group"
+  class="block relative h-30 max-xl:min-w-81.75 xl:w-64 xl:h-112.5 group"
 >
   <!-- prettier-ignore -->
   <span
-    class="whitespace-pre z-10 hover absolute left-5 md:left-10 bottom-5 xl:bottom-8 uppercase text-5 text-white xl:text-4 group-hover:text-black transition delay-75 duration-300 ease-in-out"
+    class="whitespace-pre z-20 hover absolute left-5 md:left-10 bottom-5 xl:bottom-8 uppercase text-5 text-white xl:text-4 group-hover:text-black transition delay-75 duration-300 ease-in-out"
   >{title}</span>
+  <div
+    class="group-hover:opacity-0 transition delay-75 duration-300 ease-in-out h-full w-30 xl:w-full xl:h-80 xl:bottom-0 absolute bg-linear-to-r xl:bg-linear-to-t from-black/60 to-transparent z-10"
+  >
+  </div>
   <picture>
     <source media="(min-width: 1280px)" srcset={desktopSrc} />
     <img

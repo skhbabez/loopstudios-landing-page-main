@@ -1,5 +1,5 @@
 ---
-title: the grid
+title: "the\ngrid"
 alt: an electric car
 href: "#"
 mobileImgUrl: /images/mobile/image-grid.jpg

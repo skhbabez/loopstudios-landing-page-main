@@ -1,5 +1,5 @@
 ---
-title: soccer team vr
+title: "soccer\nteam vr"
 alt: a soccer team celebrating a win
 href: "#"
 mobileImgUrl: /images/mobile/image-soccer-team.jpg

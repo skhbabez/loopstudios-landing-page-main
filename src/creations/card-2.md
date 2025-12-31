@@ -1,5 +1,5 @@
 ---
-title: night arcade
+title: "night\narcade"
 alt: a glowing arcade at night
 href: "#"
 mobileImgUrl: /images/mobile/image-night-arcade.jpg

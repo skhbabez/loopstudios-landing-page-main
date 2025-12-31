@@ -1,5 +1,5 @@
 ---
-title: deep earth
+title: "deep\nearth"
 alt: a view of the earth from space
 href: "#"
 mobileImgUrl: /images/mobile/image-deep-earth.jpg

@@ -17,11 +17,10 @@ const desktopSrc = base + desktopImgUrl;
   href={href}
   class="block relative h-30 min-w-[327px] xl:min-w-auto xl:w-64 xl:h-112.5 group"
 >
+  <!-- prettier-ignore -->
   <span
-    class="z-10 hover absolute max-w-32 xl:max-w-44 left-5 md:left-10 bottom-5 xl:bottom-8 uppercase text-5 text-white xl:text-4 group-hover:text-black transition delay-75 duration-300 ease-in-out"
-  >
-    {title}
-  </span>
+    class="whitespace-pre z-10 hover absolute left-5 md:left-10 bottom-5 xl:bottom-8 uppercase text-5 text-white xl:text-4 group-hover:text-black transition delay-75 duration-300 ease-in-out"
+  >{title}</span>
   <picture>
     <source media="(min-width: 1280px)" srcset={desktopSrc} />
     <img

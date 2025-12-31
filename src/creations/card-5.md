@@ -1,5 +1,5 @@
 ---
-title: from up above vr
+title: "from up\nabove vr"
 alt: an aerial view of a highway from above
 href: "#"
 mobileImgUrl: /images/mobile/image-from-above.jpg

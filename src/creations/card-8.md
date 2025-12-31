@@ -1,5 +1,5 @@
 ---
-title: make it fisheye
+title: "make it\nfisheye"
 alt: a fisheye lens view of a cityscape
 href: "#"
 mobileImgUrl: /images/mobile/image-fisheye.jpg
